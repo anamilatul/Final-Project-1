@@ -5,23 +5,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/task_box"
     android:layout_margin="5dp"
-    android:padding="10dp">
+    android:padding="8dp">
     <HorizontalScrollView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
+        android:paddingHorizontal="5dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnTaskCompleted">
+        app:layout_constraintEnd_toStartOf="@+id/btnTaskCompleted"
+        android:background="@color/white">
         <TextView
             android:id="@+id/tvTasks"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/my_task"
-            android:maxLines="1"
+            android:padding="5dp"
+            android:maxLines="3"
             android:layout_marginEnd="5dp"
-            android:textColor="#9F1C4253"
+            android:textColor="#9F133342"
             android:fontFamily="sans-serif-medium"
             android:textSize="20sp"
             />
@@ -29,14 +32,12 @@
 
     <Button
         android:id="@+id/btnTaskCompleted"
-        android:layout_width="wrap_content"
+        android:layout_width="48dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="6dp"
-        android:backgroundTint="#9F3A94BC"
+        android:layout_marginEnd="5dp"
         android:gravity="center"
-        android:text="@string/task_completed"
-        android:textAllCaps="false"
-        android:textSize="18sp"
+        android:background="@drawable/ic_baseline_delete"
+        app:backgroundTint="#9F286B88"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

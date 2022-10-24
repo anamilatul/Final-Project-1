@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FinalProjek1_ToDoList</string>
+    <string name="app_name">To Do List</string>
     <string name="to_do_list">To Do List</string>
     <string name="add_a_new_task">Add a new Task</string>
     <string name="what_do_you_want_to_do_next">What do you want to do next ?</string>

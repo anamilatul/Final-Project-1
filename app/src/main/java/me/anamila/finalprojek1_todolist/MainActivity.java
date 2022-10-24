@@ -1,10 +1,10 @@
 package me.anamila.finalprojek1_todolist;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 LayoutInflater layoutInflater = getLayoutInflater();
                 View view = layoutInflater.inflate(R.layout.add_popup,null,false);
-                popupWindow = new PopupWindow(view,1200,900,true);
+                popupWindow = new PopupWindow(view, ConstraintLayout.LayoutParams.WRAP_CONTENT,ConstraintLayout.LayoutParams.WRAP_CONTENT,true);
                 popupWindow.showAtLocation(view, Gravity.CENTER,0,0);
 
                 final EditText write = view.findViewById(R.id.write);
